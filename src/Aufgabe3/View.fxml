@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"? fx:controller="Aufgabe3.Controller" ?>
+<?xml version="1.0" encoding="UTF-8"?  ?>
 
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:controller="Aufgabe3.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuButton mnemonicParsing="false" text="Datei">
+      <MenuButton fx:id="menuButton" onAction="#button" mnemonicParsing="false" text="Datei">
         <items>
-            <Menu mnemonicParsing="false" text="Unspecified Menu">
+            <Menu fx:id="menu" mnemonicParsing="false" text="Unspecified Menu">
               <items>
-                  <MenuItem mnemonicParsing="false" text="Neu" />
-                <MenuItem mnemonicParsing="false" text="Öffnen" />
-                  <MenuItem mnemonicParsing="false" text="Speichern" />
-                  <MenuItem mnemonicParsing="false" text="Speichern unter..." />
+                  <MenuItem fx:id="menuItem1" mnemonicParsing="false" text="Neu" />
+                <MenuItem fx:id="menuItem2" mnemonicParsing="false" text="Öffnen" />
+                  <MenuItem fx:id="menuItem3" mnemonicParsing="false" text="Speichern" />
+                  <MenuItem fx:id="menuItem4" mnemonicParsing="false" text="Speichern unter..." />
               </items>
             </Menu>
         </items>
