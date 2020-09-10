@@ -7,20 +7,21 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
 
-
-<VBox fx:controller="aufgabe301.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:controller="aufgabe301.Controller"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aufgabe301.Controller">
    <children>
-      <MenuButton  fx:id="MenuButton" onAction="#button"  mnemonicParsing="false" text="Datei">
-        <items>
-            <Menu  fx:id="menu"  mnemonicParsing="false" text="Unspecified Menu">
+      <MenuBar fx:id="menuBar">
+         <menus>
+            <Menu fx:id="fileMenu" mnemonicParsing="false" text="Datei">
               <items>
-                  <MenuItem  fx:id="menuItem1" mnemonicParsing="false" text="Neu" />
-                <MenuItem fx:id="menuItem2" mnemonicParsing="false" text="Öffnen" />
-                  <MenuItem fx:id="menuItem3" mnemonicParsing="false" text="Speichern" />
-                  <MenuItem fx:id="menuItem4" mnemonicParsing="false" text="Speichern unter..." />
+                <MenuItem fx:id="newFileMenuItem" mnemonicParsing="false" text="Neu" onAction="#newFile"/>
+                  <MenuItem fx:id="openFileMenuItem" mnemonicParsing="false" text="Öffnen..." onAction="#openFile" />
+                  <MenuItem fx:id="saveFileMenuItem" mnemonicParsing="false" text="Speichern" onAction="#saveFile"/>
+                  <MenuItem fx:id="saveFileAsMenuItem" mnemonicParsing="false" text="Speichern unter..." onAction="#saveFileAs" />
               </items>
             </Menu>
-        </items>
-      </MenuButton>
+         </menus>
+      </MenuBar>
+      <Label fx:id="Label" text="Label" />
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </VBox>
