@@ -6,22 +6,29 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
-hallo
-<VBox fx:controller="aufgabe301.Controller"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aufgabe301.Controller">
-   <children>
-      <MenuBar fx:id="menuBar">
-        
-            <Menu fx:id="fileMenu" mnemonicParsing="false" text="Datei">
-             
-                <MenuItem fx:id="newFileMenuItem"  text="Neu" onAction="#newFile"/>
-                  <MenuItem fx:id="openFileMenuItem"  text="Öffnen..." onAction="#openFile" />
-                  <MenuItem fx:id="saveFileMenuItem"  text="Speichern" onAction="#saveFile"/>
-                  <MenuItem fx:id="saveFileAsMenuItem" text="Speichern unter..." onAction="#saveFileAs" />
-              
-            </Menu>
-        
-      </MenuBar>
-      <Label fx:id="Label" text="Label" />
-      <TextArea fx:id="textArea"  />
-   </children>
+<VBox fx:controller="aufgabe301.Controller" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="aufgabe301.Controller">
+	<children>
+		<MenuBar fx:id="menuBar">
+
+			<Menu fx:id="fileMenu" mnemonicParsing="false" text="Datei">
+
+				<MenuItem fx:id="newFileMenuItem" text="Neu"
+					onAction="#newFile" />
+				<MenuItem fx:id="openFileMenuItem" text="Öffnen..."
+					onAction="#openFile" />
+				<MenuItem fx:id="saveFileMenuItem" text="Speichern"
+					onAction="#saveFile" />
+				<MenuItem fx:id="saveFileAsMenuItem"
+					text="Speichern unter..." onAction="#saveFileAs" />
+
+			</Menu>
+
+		</MenuBar>
+		<Label fx:id="Label" text="Label" />
+		<TextArea fx:id="textArea" />
+	</children>
 </VBox>
