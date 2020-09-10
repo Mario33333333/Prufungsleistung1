@@ -15,16 +15,13 @@ public class Exe301 extends Application {
 
 	}
 
-	
 	public void start(Stage primaryStage) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
 		Scene scene = new Scene(root);
 		primaryStage.setTitle("Figgerei");
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
+
 	}
-	
-	
 
 }

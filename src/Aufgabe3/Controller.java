@@ -19,4 +19,5 @@ public class Controller implements Initializable{
 		fileChooser.getExtensionFilters().add(new ExtensionFilter("Textdateien", "*.txt"));
 		
 	}
+	
 }
