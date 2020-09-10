@@ -1,9 +1,6 @@
 package Aufgabe3;
 
-<<<<<<< HEAD
-public class Controller {
-ewasgtwegt
-=======
+
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -22,6 +19,4 @@ public class Controller implements Initializable{
 		fileChooser.getExtensionFilters().add(new ExtensionFilter("Textdateien", "*.txt"));
 		
 	}
-
->>>>>>> branch 'master' of https://github.com/Mario33333333/Prufungsleistung1.git
 }
