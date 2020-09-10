@@ -1,5 +1,7 @@
 package Aufgabe3;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,8 +16,8 @@ public class Exe301 extends Application {
 	}
 
 	
-	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource(View.fxml));
+	public void start(Stage primaryStage) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
 		Scene scene = new Scene(root);
 		primaryStage.setTitle("Figgerei");
 		primaryStage.setScene(scene);
